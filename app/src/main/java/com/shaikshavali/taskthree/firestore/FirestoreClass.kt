@@ -107,10 +107,10 @@ class FirestoreClass {
             .update(hashMap)
             .addOnSuccessListener {
                 if (activity is UploadImageActivity) {
-                    activity.userUpdateSuccess()
+                    activity.userUpdateSuccess(userData)
                 }
                 if (activity is MapActivity) {
-                    activity.updateUserSuccess()
+                    activity.updateUserSuccess(userData)
                 }
                 if (activity is HomeScreen) {
                     activity.tokenUpdateSuccess()
@@ -119,13 +119,17 @@ class FirestoreClass {
             .addOnFailureListener {
                 if (activity is UploadImageActivity) {
                     activity.hideProgressDialog()
+
                     activity.showStatusDialog(activity, "Image Failed", userData.fcmToken)
+
                     Log.e("FS UpdateUser : ", it.message!!)
                 }
                 if (activity is MapActivity) {
                     activity.hideProgressDialog()
-                    activity.showStatusDialog(activity, "Location Failed", userData.fcmToken)
+
+                    activity.showStatusDialog(activity, "Image Failed", userData.fcmToken)
                     Log.e("FS UpdateUser : ", it.message!!)
+
                 }
                 if (activity is HomeScreen) {
                     activity.hideProgressDialog()

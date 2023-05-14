@@ -7,14 +7,14 @@
     tools:context=".activities.UploadImageActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_upload_img"
         android:layout_width="match_parent"
+
         android:layout_height="?attr/actionBarSize"
 
-        android:id="@+id/toolbar_upload_img"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
         >
 
@@ -23,66 +23,64 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:layout_gravity="center"
             android:fontFamily="@font/opensanssemibold"
             android:padding="5dp"
             android:text="@string/gallery"
             android:textColor="@color/clr_black"
             android:textSize="20dp"
-            android:layout_gravity="center"
 
             />
 
     </androidx.appcompat.widget.Toolbar>
 
     <View
+        android:id="@+id/view_upload_img"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:id="@+id/view_upload_img"
 
-        app:layout_constraintTop_toBottomOf="@id/toolbar_upload_img"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_upload_img"
 
         />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="255dp"
-
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-
         android:id="@+id/img_upload_card"
-        android:src="@drawable/img_cloud"
+        android:layout_width="match_parent"
+
+        android:layout_height="255dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+
+        android:layout_marginEnd="10dp"
         android:background="@drawable/card_img_bg"
         android:scaleType="centerInside"
+        android:src="@drawable/img_cloud"
 
-        app:layout_constraintTop_toBottomOf="@id/view_upload_img"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_upload_img"
 
-     />
+        />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-
         android:id="@+id/btn_upload_img_upload_act"
+        android:layout_width="310dp"
+
+        android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:background="@drawable/btn_bg_blue_color"
+        android:fontFamily="@font/opensanssemibold"
         android:text="@string/upload_image"
         android:textColor="@color/clr_white"
         android:textSize="@dimen/text_size_16dp"
-        android:fontFamily="@font/opensanssemibold"
 
 
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_upload_card"
 
 
         />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,7 @@ import android.content.SharedPreferences
 import android.media.RingtoneManager
 import android.os.Build
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
@@ -23,33 +24,23 @@ import java.util.Random
 
 class MyFirebaseMessageService : FirebaseMessagingService() {
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage)
 
-        Log.d(TAG, "From: ${remoteMessage.from}")
+        remoteMessage.data.isNotEmpty().let {
+            Log.d(TAG, "Message data payload : ${remoteMessage.data}")
 
-        Log.d(TAG, "MessageId: ${remoteMessage.messageId}")
-
-        Log.d(TAG, "Notification : ${remoteMessage.notification}")
-
-        Log.d(TAG, "Sender ID : ${remoteMessage.senderId}")
-
-        Log.d(TAG,"To : ${remoteMessage.to}")
+            val title = remoteMessage.data[Constants.FCM_KEY_TITLE]!!
+            val message = remoteMessage.data[Constants.FCM_KEY_MESSAGE]!!
 
 
-            remoteMessage.data.isNotEmpty().let {
-                Log.d(TAG, "Message data payload : ${remoteMessage.data}")
+            //need to make changes here to not to get notification to me i.e., logged in user
 
-                val title = remoteMessage.data[Constants.FCM_KEY_TITLE]!!
-                val message = remoteMessage.data[Constants.FCM_KEY_MESSAGE]!!
+            // Finally sent them to build a notification.
+            sendNotification(title, message)
 
-                //need to make changes here to not to get notification to me i.e., logged in user
-
-
-                // Finally sent them to build a notification.
-                sendNotification(title, message)
-
-            }
+        }
 
         remoteMessage.notification?.let {
 
@@ -76,6 +67,7 @@ class MyFirebaseMessageService : FirebaseMessagingService() {
         editor.apply()
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     @SuppressLint("UnspecifiedImmutableFlag")
     private fun sendNotification(title: String, message: String) {
 
@@ -118,12 +110,13 @@ class MyFirebaseMessageService : FirebaseMessagingService() {
         val rand: Int = Random().nextInt()
         //we can get random number of notifications now
 
-        Log.e("Rand @FCM :", "$rand")
+//        stopForeground(true)
+//        stopSelf()
 
+        Log.e("Rand @FCM :", "$rand")
         notificationManager.notify(rand, notificationBuilder.build())
 
     }
-
 
     companion object {
         const val TAG = "MessagingService"

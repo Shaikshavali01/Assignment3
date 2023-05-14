@@ -35,12 +35,12 @@ import kotlinx.android.synthetic.main.activity_map.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-class MapActivity : BaseActivity(){
+class MapActivity : BaseActivity() {
 
-    private var userData : User? = null
+    private var userData: User? = null
 //  To store user details data
 
-    private lateinit var mfusedLocationClient : FusedLocationProviderClient
+    private lateinit var mfusedLocationClient: FusedLocationProviderClient
 //  A variable used to get the current location of the user
 
 
@@ -53,7 +53,7 @@ class MapActivity : BaseActivity(){
         val id = intent.getStringExtra(Constants.USER_ID_INTENT)!!
 
         showProgressDialog(resources.getString(R.string.please_wait))
-        FirestoreClass().getUserDetails(this,id)
+        FirestoreClass().getUserDetails(this, id)
 //  get the user details from the firebase using Id
 
         mfusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -61,26 +61,30 @@ class MapActivity : BaseActivity(){
         Handler().postDelayed(
             {
 //  here using handler to wait until it loads the data from the fire base.
-                val supportMapFragment : SupportMapFragment = supportFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
+                val supportMapFragment: SupportMapFragment =
+                    supportFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
 //  Creating the variable for the map fragment and using it to load the map
-                supportMapFragment.getMapAsync {
-                        googleMap->
+                supportMapFragment.getMapAsync { googleMap ->
                     Log.e("Latitude : ", "${userData!!.latitude}")
                     Log.e("Longitude : ", "${userData!!.longitude}")
 
 //  Here map has been loaded with the user data latitude and longitude
 
-                    val position = LatLng(userData!!.latitude,userData!!.longitude)
-                    googleMap.addMarker(MarkerOptions().position(position).icon(BitmapDescriptorFactory.fromResource(R.drawable.image_pin)))
+                    val position = LatLng(userData!!.latitude, userData!!.longitude)
+                    googleMap.addMarker(
+                        MarkerOptions().position(position)
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.image_pin))
+                    )
 //  Adding the marker on the google map with the position and using the user's icon by converting it into the bitmap from the image
 
-                    val zoomLocation = CameraUpdateFactory.newLatLngZoom(position,15f)
+                    val zoomLocation = CameraUpdateFactory.newLatLngZoom(position, 15f)
 //  The map will be zoomed to the marked location using camera update factory with 15f as the zoom level.
                     googleMap.animateCamera(zoomLocation)
-//  Linking that updaated camera settings to the google map
+//  Linking that updated camera settings to the google map
 
                 }
-            },1000)
+            }, 1000
+        )
 
         et_date.setOnClickListener {
             showDatePicker()
@@ -101,39 +105,41 @@ class MapActivity : BaseActivity(){
     private fun showDatePicker() {
 
 
-            val cal= Calendar.getInstance()
-            val year=cal.get(Calendar.YEAR)
-            val month = cal.get(Calendar.MONTH)
-            val day = cal.get(Calendar.DAY_OF_MONTH)
+        val cal = Calendar.getInstance()
+        val year = cal.get(Calendar.YEAR)
+        val month = cal.get(Calendar.MONTH)
+        val day = cal.get(Calendar.DAY_OF_MONTH)
 
-            val dpg= DatePickerDialog(this, DatePickerDialog.OnDateSetListener { _, year, month, sday ->
+        val dpg = DatePickerDialog(
+            this, DatePickerDialog.OnDateSetListener { _, year, month, sday ->
 
-                val selectedDate="$sday/${month+1}/$year"
+                val selectedDate = "$sday/${month + 1}/$year"
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
                 val theDate = sdf.parse(selectedDate)
-                Log.e("The Date @Map ","${theDate!!.time}")
+                Log.e("The Date @Map ", "${theDate!!.time}")
 
                 userData!!.date = theDate.time
                 val reqDate = getDateFromMilliSeconds(theDate.time)
                 et_date.setText(reqDate)
 
             },
-                year,
-                month,
-                day)
-            dpg.datePicker.maxDate=System.currentTimeMillis()-86400000
-            dpg.show()
+            year,
+            month,
+            day
+        )
+        dpg.datePicker.maxDate = System.currentTimeMillis() - 86400000
+        dpg.show()
 
     }
 
-    private fun getDateFromMilliSeconds(milliSeconds : Long):String{
+    private fun getDateFromMilliSeconds(milliSeconds: Long): String {
 
         val format = SimpleDateFormat("dd MMM yyyy")
         val dateString = format.format(milliSeconds)
-        Log.e("dateString : ",dateString)
+        Log.e("dateString : ", dateString)
         et_date.setText(dateString)
-        return  dateString
+        return dateString
 
     }
 
@@ -164,7 +170,7 @@ class MapActivity : BaseActivity(){
 
 
     @SuppressLint("MissingPermission")
-    private  fun requestNewLocation() {
+    private fun requestNewLocation() {
 
         if (isLocationOn()) {
 //  Checking whether the location is enabled or not for accessing the current location
@@ -182,18 +188,17 @@ class MapActivity : BaseActivity(){
             mfusedLocationClient.requestLocationUpdates(locationReq, locCallBack, Looper.myLooper())
 //requesting for the current location using FusedLocationClient object
 
-        }
-        else{
-            Toast.makeText(this,"Please Turn On Location",Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "Please Turn On Location", Toast.LENGTH_LONG).show()
 //  If Location is not On then notify the user to turn it on using a Toast
         }
     }
 
-    private fun isLocationOn(): Boolean{
-        val locMananager : LocationManager = getSystemService(LOCATION_SERVICE) as LocationManager
+    private fun isLocationOn(): Boolean {
+        val locMananager: LocationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 //  a variable to get access the Location manager settings
 
-        return locMananager.isProviderEnabled(LocationManager.GPS_PROVIDER)||
+        return locMananager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
                 locMananager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
 //  return true if gps or location is enabled
     }
@@ -203,11 +208,11 @@ class MapActivity : BaseActivity(){
         hideProgressDialog()
         userData = user
 //  after Loading the user details assign it to variable
-        Log.e("Map @Activity ","Load User Success")
+        Log.e("Map @Activity ", "Load User Success")
 
 //  setting all the required fields with the user data which is loaded from the firebase
         et_address.setText(userData!!.location)
-        if(userData!!.date > 0) {
+        if (userData!!.date > 0) {
             val reqDate = getDateFromMilliSeconds(userData!!.date)
 //  get the date format from the milliseconds
             et_date.setText(reqDate)
@@ -217,11 +222,11 @@ class MapActivity : BaseActivity(){
     }
 
 
-    private  val locCallBack = object : LocationCallback(){
-//  a variable which contains the latest location method
+    private val locCallBack = object : LocationCallback() {
+        //  a variable which contains the latest location method
         override fun onLocationResult(location: LocationResult) {
             super.onLocationResult(location)
-            val mLastLoc : Location = location.lastLocation!!
+            val mLastLoc: Location = location.lastLocation!!
 //  accessing the latest location of the user
 
             val mLatitude = mLastLoc.latitude
@@ -229,26 +234,26 @@ class MapActivity : BaseActivity(){
 //  extracting the latitude and longitude from it to store them in firebase
 
             hideProgressDialog()
-            getAddressFromLanLng(mLatitude,mLongitude)
+            getAddressFromLanLng(mLatitude, mLongitude)
 // after getting the lat and lon we need the address to display it.
         }
     }
 
-    private fun getAddressFromLanLng(latitude : Double , longitude : Double) {
+    private fun getAddressFromLanLng(latitude: Double, longitude: Double) {
 //  a method which takes lat and lon as parameter and store it in the firebase
 
-        val addressClass =  GetAddressFromPosition(this@MapActivity,latitude,longitude)
+        val addressClass = GetAddressFromPosition(this@MapActivity, latitude, longitude)
 // I have created an AsyncTask for getting the address from latlng
 
 //  Set the address listener interface object and get the data from the async task and implement it here
-        addressClass.setAddressListener(object : GetAddressFromPosition.AddressListener{
+        addressClass.setAddressListener(object : GetAddressFromPosition.AddressListener {
 
             override fun onAddressFound(address: String?) {
 //  On successfully getting the address it will be stored in the firebase
-                Log.e("locationAddress","$address")
+                Log.e("locationAddress", "$address")
                 et_address.setText(address)
 
-                updateUserDetailsToFirebase(latitude,longitude, address!!)
+                updateUserDetailsToFirebase(latitude, longitude, address!!)
 //  A method which takes care of updating the details into the firebase
 
             }
@@ -256,8 +261,8 @@ class MapActivity : BaseActivity(){
             override fun onError() {
 //  If it unable to load the address then we will log the error
 
-                Toast.makeText(this@MapActivity,"ERROR",Toast.LENGTH_SHORT).show()
-                Log.e("Address : ","Something went wrong ;;;")
+                Toast.makeText(this@MapActivity, "ERROR", Toast.LENGTH_SHORT).show()
+                Log.e("Address : ", "Something went wrong ;;;")
             }
 
         })
@@ -267,9 +272,9 @@ class MapActivity : BaseActivity(){
     }
 
 
-    private fun updateUserDetailsToFirebase(latitude : Double, longitude : Double, address : String){
+    private fun updateUserDetailsToFirebase(latitude: Double, longitude: Double, address: String) {
 
-        val updateUser : User = userData!!
+        val updateUser: User = userData!!
         updateUser.latitude = latitude
         updateUser.longitude = longitude
         updateUser.location = address
@@ -277,20 +282,20 @@ class MapActivity : BaseActivity(){
         Log.e("Map @updateUser", "Going to update in firebase latlng ${updateUser.name}")
         Log.e("Map @updateUser loc", address)
         showProgressDialog(resources.getString(R.string.please_wait))
-        FirestoreClass().updateUser(this@MapActivity,updateUser)
+        FirestoreClass().updateUser(this@MapActivity, updateUser)
 //  Update the user details latlng and address to the firebase...
 
     }
 
 
-    fun updateUserSuccess(){
+    fun updateUserSuccess(user: User) {
 
         hideProgressDialog()
 
-        showStatusDialog(this,"Location Successfully Updated",userData!!.fcmToken)
+        showStatusDialog(this, "Location Successfully Updated", userData!!.fcmToken)
+
 // after successfully updating the details show the dialog as success
     }
-
 
 
     private fun showRationalDialogForPermissions() {
@@ -313,13 +318,13 @@ class MapActivity : BaseActivity(){
             .show()
     }
 
-    private fun setupActionBar(){
+    private fun setupActionBar() {
         setSupportActionBar(toolbar_map_screen)
         val action = supportActionBar
-        if(action!=null){                           //setting the action bar
+        if (action != null) {                           //setting the action bar
             action.setDisplayHomeAsUpEnabled(true)
             action.setHomeAsUpIndicator(R.drawable.back_img_clr_black)
-            action.title=""
+            action.title = ""
         }
         toolbar_map_screen.setNavigationOnClickListener {
             onBackPressed()

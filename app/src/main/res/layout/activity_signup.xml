@@ -98,11 +98,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            app:passwordToggleEnabled="true"
-
             android:layout_marginStart="10dp"
+
             android:layout_marginTop="180dp"
             android:layout_marginEnd="10dp"
+            app:passwordToggleEnabled="true"
 
             >
 
@@ -137,10 +137,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            app:passwordToggleEnabled="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="255dp"
             android:layout_marginEnd="10dp"
+            app:passwordToggleEnabled="true"
 
             >
 

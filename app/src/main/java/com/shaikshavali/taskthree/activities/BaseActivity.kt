@@ -8,14 +8,12 @@ import android.os.AsyncTask
 import android.os.Handler
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
 import com.shaikshavali.taskthree.R
 import com.shaikshavali.taskthree.databinding.StatusImageBinding
 import com.shaikshavali.taskthree.utils.Constants
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.dialog_progress.*
-import kotlinx.android.synthetic.main.status_image.*
 import kotlinx.android.synthetic.main.status.*
 import org.json.JSONObject
 import java.io.BufferedReader
@@ -30,8 +28,6 @@ open class BaseActivity : AppCompatActivity() {
     private lateinit var progressDialog: Dialog
 
     private lateinit var statusDialog: Dialog
-
-    private lateinit var statusImageDialog: Dialog
 
 
     fun showProgressDialog(text: String) {
@@ -73,12 +69,13 @@ open class BaseActivity : AppCompatActivity() {
 
     }
 
-     fun showImageDialog(imagePath: String) {
+    fun showImageDialog(imagePath: String) {
         val dialog = Dialog(this)
         val dialogBinding = StatusImageBinding.inflate(layoutInflater)
         dialog.setContentView(dialogBinding.root)
         Picasso.get()
             .load(imagePath)
+            .resize(380, 256)
             .into(dialogBinding.imgStatusLayout)
 
         // Close the dialog when clicked
@@ -95,7 +92,10 @@ open class BaseActivity : AppCompatActivity() {
     }
 
 
-    private  inner class SendNotificationAsyncTask(val msgStatus: String, val token: String) :
+    inner class SendNotificationAsyncTask(
+        private val msgStatus: String,
+        private val token: String
+    ) :
         AsyncTask<Void, Void, String>() {
 
 
@@ -125,13 +125,15 @@ open class BaseActivity : AppCompatActivity() {
 
                 val wr = DataOutputStream(connection.outputStream)
 
-                val jsonRequest = JSONObject()                          //contains data to whom we have to send it
+                val jsonRequest =
+                    JSONObject()                          //contains data to whom we have to send it
                 val dataObject = JSONObject()
 
                 dataObject.put(Constants.FCM_KEY_TITLE, "Status")
 
                 dataObject.put(
-                    Constants.FCM_KEY_MESSAGE, msgStatus                //contains all the data of the notification
+                    Constants.FCM_KEY_MESSAGE,
+                    msgStatus                //contains all the data of the notification
                 )
 
                 jsonRequest.put(Constants.FCM_KEY_DATA, dataObject)     //

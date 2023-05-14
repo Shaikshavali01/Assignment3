@@ -41,7 +41,8 @@ class GalleryActivity : BaseActivity() {
 
             val intent = Intent(this, UploadImageActivity::class.java)
             intent.putExtra(Constants.USER, userData)
-            startActivity(intent)}
+            startActivity(intent)
+        }
 
     }
 

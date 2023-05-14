@@ -107,7 +107,8 @@ class HomeScreen : BaseActivity() {
 
         val userHashMap = HashMap<String, Any>()
         userHashMap[Constants.FCM_TOKEN] =
-            token      //  if the user does not have the updated token then update it in firebase
+            token
+        //  if the user does not have the updated token then update it in firebase
 
         Log.e("update fcm ", "Going to update fcm token in fb $token")
 
@@ -120,7 +121,7 @@ class HomeScreen : BaseActivity() {
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         super.onBackPressed()
-        Log.e("Onbackpressed @Home ","Hii....")
+        Log.e("Onbackpressed @Home ", "Hii....")
         mSharedPreferences.edit().clear().apply()
     }
 

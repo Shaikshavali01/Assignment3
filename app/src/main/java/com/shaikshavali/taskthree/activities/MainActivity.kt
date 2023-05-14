@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBar()
         btn_login.setOnClickListener {
-            val intent =Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
 
         }
 
         btn_signup.setOnClickListener {
-            val intent =Intent(this,SignupActivity::class.java)
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
 
         }
@@ -31,16 +31,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         return super.onCreateOptionsMenu(menu)
-        menuInflater.inflate(R.menu.settings_img,menu)
+        menuInflater.inflate(R.menu.settings_img, menu)
 
     }
-    private fun setupActionBar(){
+
+    private fun setupActionBar() {
         setSupportActionBar(toolbar_welcome_screen)
         val action = supportActionBar
-        if(action!= null){
-            action.title=""
+        if (action != null) {
+            action.title = ""
 //            action.setDisplayHomeAsUpEnabled(true)
-           // action.setHomeAsUpIndicator(R.drawable.img_back_arrow)
+            // action.setHomeAsUpIndicator(R.drawable.img_back_arrow)
 
         }
 

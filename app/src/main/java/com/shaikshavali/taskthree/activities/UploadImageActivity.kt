@@ -37,7 +37,7 @@ class UploadImageActivity : BaseActivity() {
     private var imageURL: String = ""
 
     //    after storing the image into the firebase it will generate the url
-    var userData: User? = null
+    private var userData: User? = null
 
 //    storing the user details using Intent
 
@@ -120,7 +120,10 @@ class UploadImageActivity : BaseActivity() {
         val items = arrayOf("Select photo from Gallery", "Capture photo from Camera")
         picdialog.setItems(items) { _, which ->     //setting the items into the dialog and waiting for the users action
             when (which) {
-                0 -> chooseImageFromGallery()       //open gallery method
+                0 -> {
+                    Log.e("Inside Dialog : ", "chooseImageFromGallery.........")
+                    chooseImageFromGallery()
+                }//open gallery method
                 1 -> chooseImageFromCamera()        //open camera method
 
             }
@@ -254,7 +257,7 @@ class UploadImageActivity : BaseActivity() {
             .withListener(object : MultiplePermissionsListener {
                 override fun onPermissionsChecked(report: MultiplePermissionsReport) {
                     if (report.areAllPermissionsGranted()) {
-
+                        Log.e("Gallery @UploadImg ", "chooseImageFromGallery()")
                         val intent =
                             Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
 //                        If the user choosen the From Gallery then make an Intent which directs to the Gallery
@@ -262,6 +265,8 @@ class UploadImageActivity : BaseActivity() {
 //                        Start an activity with result as a Image from the Gallery
 
                     }
+                    Log.e("Gallery @UploadImg 2 ", "chooseImageFromGallery()")
+
                 }
 
                 override fun onPermissionRationaleShouldBeShown(
@@ -315,14 +320,16 @@ class UploadImageActivity : BaseActivity() {
         }
     }
 
-    fun userUpdateSuccess() {
+    fun userUpdateSuccess(user: User) {
 
         hideProgressDialog()
+
         showStatusDialog(
             this,
             resources.getString(R.string.successfully_updated),
-            userData!!.fcmToken
+            user.fcmToken
         )
+
 //  After successfully updating the user in the firebase show the status dialog as successfully updated and
 //  make the result of the task waiting for the image as OK it will be redirected to the Home Screen
         Activity.RESULT_OK

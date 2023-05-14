@@ -34,7 +34,8 @@ class SignupActivity : BaseActivity() {
     private fun registerUser() {
 
         val name = et_uname_signup.text.toString().trim { it <= ' ' }
-        val email = et_email_signup.text.toString().trim { it <= ' ' }               //loading all the user entered details into variables
+        val email = et_email_signup.text.toString()
+            .trim { it <= ' ' }               //loading all the user entered details into variables
         val password = et_password_signup.text.toString().trim { it <= ' ' }
         val rePassword = et_re_password_signup.text.toString()
         val cBox = cb_signin.isChecked
@@ -44,11 +45,16 @@ class SignupActivity : BaseActivity() {
         if (checkValues(name, email, password, rePassword, cBox)) {
 
             showProgressDialog(resources.getString(R.string.please_wait))
-            auth.createUserWithEmailAndPassword(email, password)        //creating the user with email and password
+            auth.createUserWithEmailAndPassword(
+                email,
+                password
+            )        //creating the user with email and password
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        val fbUser = task.result!!.user                 //getting the registered user here using result
-                        Toast.makeText(this, "$name Registered successfully", Toast.LENGTH_SHORT).show()
+                        val fbUser =
+                            task.result!!.user                 //getting the registered user here using result
+                        Toast.makeText(this, "$name Registered successfully", Toast.LENGTH_SHORT)
+                            .show()
 
                         val user = User(fbUser!!.uid, name, email)
                         FirestoreClass().registerUser(this@SignupActivity, user)
@@ -131,7 +137,7 @@ class SignupActivity : BaseActivity() {
         }
         toolbar_signup_screen.setNavigationOnClickListener {
             onBackPressed()                                                 //on clicking the vector asset it should be
-                                                                            // redirected to previous activity
+            // redirected to previous activity
         }
     }
 
