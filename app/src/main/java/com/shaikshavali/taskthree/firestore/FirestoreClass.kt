@@ -9,6 +9,7 @@ import com.google.firebase.firestore.SetOptions
 import com.shaikshavali.taskthree.activities.*
 import com.shaikshavali.taskthree.models.User
 import com.shaikshavali.taskthree.utils.Constants
+import kotlin.time.Duration.Companion.minutes
 
 class FirestoreClass {
 
@@ -35,10 +36,15 @@ class FirestoreClass {
             .document(getCurrentUserID())
             .get()
             .addOnSuccessListener { doc ->
-                val user = doc.toObject(User::class.java)!!
-                activity.signInSuccess(user)
+                val user = doc.toObject(User::class.java)
+                if(user != null)
+                    activity.signInSuccess(user)
+                else{
+                    Log.e("Load User...","Unable to load user bcoz data is not saved properly in FS")
+                }
             }
-            .addOnFailureListener {
+            .addOnFailureListener {exp->
+                Log.e("Load User...","Failed to load the user")
                 activity.hideProgressDialog()
             }
 
@@ -53,6 +59,7 @@ class FirestoreClass {
         var currentUserID = ""
         if (currentUser != null) {
             currentUserID = currentUser.uid
+
         }
 
         return currentUserID

@@ -195,11 +195,11 @@ class MapActivity : BaseActivity() {
     }
 
     private fun isLocationOn(): Boolean {
-        val locMananager: LocationManager = getSystemService(LOCATION_SERVICE) as LocationManager
+        val locManager: LocationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 //  a variable to get access the Location manager settings
 
-        return locMananager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
-                locMananager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+        return locManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
+                locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
 //  return true if gps or location is enabled
     }
 
