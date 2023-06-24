@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_item_image.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\item_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_image_pin.png.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\image_pin.png"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\menu_settings_img.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\menu\\settings_img.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-pngs-50:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/menu_settings_img.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/menu/settings_img.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\font_roboto_regular.ttf.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\font\\roboto_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\xml_provider_paths.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_btn_bg_blue_color.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\btn_bg_blue_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\font_opensansregular.ttf.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\font\\opensansregular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_back_img_clr_black.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\back_img_clr_black.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_nav_img.png.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\nav_img.png"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_home_screen.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_home_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_map.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_btn_bg_white_color.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\btn_bg_white_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_fl_bg_up_corner.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\fl_bg_up_corner.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_gallery.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_cross_eye_img.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\cross_eye_img.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_status_image.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\status_image.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_status.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/status.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_activity_map.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_status_bg_border.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\status_bg_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_status_image.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/status_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_dialog_progress.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\dialog_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_img_back_arrow.png.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\img_back_arrow.png"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_activity_gallery.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\font_fonts.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\font\\fonts.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_status.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\status.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_baseline_remove_red_eye_24.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\baseline_remove_red_eye_24.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_activity_signup.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_activity_upload_image.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_upload_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\layout_activity_upload_image.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_upload_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_baseline_settings_white_24.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\baseline_settings_white_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_activity_home_screen.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_home_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_card_img_bg.png.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\card_img_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_user_images.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\user_images.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\drawable_img_cloud.png.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\drawable\\img_cloud.png"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_item_image.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/item_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-merged_res-55:/layout_activity_main.xml.flat",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\font_opensanssemibold.ttf.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\font\\opensanssemibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-merged_res-55:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\mipmap-xhdpi\\ic_launcher.webp"
+    }
+]

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="clr_black">#404040</color>
+    <color name="clr_blue">#6388DF</color>
+    <color name="clr_cement">#C2C2C2</color>
+    <color name="clr_light_blue">#19BED4</color>
+    <color name="clr_status_bg">#252525</color>
+    <color name="clr_white">#FFFFFF</color>
+    <color name="main_bg_color">#6388DF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="mar_end_map_activity">10dp</dimen>
+    <dimen name="mar_start_map_activity">10dp</dimen>
+    <dimen name="text_size_16dp">16dp</dimen>
+    <dimen name="text_size_20dp">20dp</dimen>
+    <dimen name="text_size_24dp">24dp</dimen>
+    <dimen name="text_size_30dp">30dp</dimen>
+    <string name="add_image">Add Image</string>
+    <string name="address">Address</string>
+    <string name="app_name">TaskThree</string>
+    <string name="create_account">Create Account</string>
+    <string name="date_and_time">Date and time</string>
+    <string name="default_web_client_id" translatable="false">645267907779-4a78hnnssfejee31qhtef2qc59nuuj15.apps.googleusercontent.com</string>
+    <string name="email">Email</string>
+    <string name="existingUser">Existing User</string>
+    <string name="gallery">Gallery</string>
+    <string name="gcm_defaultSenderId" translatable="false">645267907779</string>
+    <string name="getting_location">Accessing Location</string>
+    <string name="google_api_key" translatable="false">AIzaSyCz8gpzXNGve3EMolJ362fI1jKGUGWmzfQ</string>
+    <string name="google_app_id" translatable="false">1:645267907779:android:16fb1cdc6f01c55f7cae76</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCz8gpzXNGve3EMolJ362fI1jKGUGWmzfQ</string>
+    <string name="google_maps_api_key">AIzaSyD0elYs9IOnwebWmSgKhMOLIWEVvGw_D7k</string>
+    <string name="google_storage_bucket" translatable="false">task3-22e25.appspot.com</string>
+    <string name="i_agree">I agree to the</string>
+    <string name="image_failed">Image Failed</string>
+    <string name="loading_images">Loading Images</string>
+    <string name="login">Login</string>
+    <string name="map">Map</string>
+    <string name="my_app">My App</string>
+    <string name="newUser">New User</string>
+    <string name="notification_channel_id">Task 3 Channel Id</string>
+    <string name="pass_text">Password must be alphanumeric and atleast six characters</string>
+    <string name="password">Password</string>
+    <string name="password_data">Password must be alphanumeric and atleast six characters</string>
+    <string name="place_address">Hitech City Rd, Patrika Nagar, HITEC City, Hyderabad, Telangana 500081</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="project_id" translatable="false">task3-22e25</string>
+    <string name="re_password">Re-enter password</string>
+    <string name="signup">Sign Up</string>
+    <string name="status">Status</string>
+    <string name="successfully_updated">Successfully Updated</string>
+    <string name="terms_conditions">Terms of Services</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="update_location">Update location</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="uploading_image">Uploading Image</string>
+    <string name="user_name">Username</string>
+    <string name="view_gallery">View Gallery</string>
+    <string name="view_lat_loc">View latest location</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_back">Welcome back</string>
+    <style name="Theme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TaskThree" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.TaskThree.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.TaskThree.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TaskThree.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

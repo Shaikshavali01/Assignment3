@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/activity_home_screen.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_home_screen.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\status.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\status.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\status_image.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\status_image.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/activity_gallery.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_gallery.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/activity_upload_image.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_upload_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\dialog_progress.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\dialog_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/status.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/status.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/status_image.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/status_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/activity_signup.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_gallery.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_home_screen.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_home_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_map.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/item_image.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/item_image.xml"
+    },
+    {
+        "merged": "com.shaikshavali.taskthree.app-mergeDebugResources-54:/layout/activity_map.xml",
+        "source": "com.shaikshavali.taskthree.app-main-57:/layout/activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\item_image.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\item_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-mergeDebugResources-54:\\layout\\activity_upload_image.xml",
+        "source": "C:\\Users\\SHAIK SHAIKSHAVALI\\.gradle\\daemon\\7.5\\com.shaikshavali.taskthree.app-main-57:\\layout\\activity_upload_image.xml"
+    }
+]
